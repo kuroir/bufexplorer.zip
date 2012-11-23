@@ -440,6 +440,7 @@ function! s:MapKeys()
     nnoremap <script> <silent> <buffer> t             :call <SID>SelectBuffer("tab")<CR>
     nnoremap <script> <silent> <buffer> T             :call <SID>ToggleShowTabBuffer()<CR>
     nnoremap <script> <silent> <buffer> u             :call <SID>ToggleShowUnlisted()<CR>
+    map! <buffer> <silent> <cr> <cr><cr>
 
     for k in ["G", "n", "N", "L", "M", "H"]
         exec "nnoremap <buffer> <silent>" k ":keepjumps normal!" k."<CR>"
@@ -1123,6 +1124,7 @@ endif
 if !hasmapto('BufExplorerVerticalSplit')
     noremap <script> <silent> <unique> <Leader>bv :BufExplorerVerticalSplit<CR>
 endif
+
 
 " Default values {{{1
 call s:Set("g:bufExplorerDefaultHelp", 1)           " Show default help?
