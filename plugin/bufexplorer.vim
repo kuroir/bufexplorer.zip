@@ -481,20 +481,20 @@ function! s:SetupSyntax()
         syn match bufExplorerAltBuf    /^\s*\d\+.#.*/
         syn match bufExplorerUnlBuf    /^\s*\d\+u.*/
 
-        hi def link bufExplorerBufNbr Number
-        hi def link bufExplorerMapping NonText
-        hi def link bufExplorerHelp Special
+        hi def link bufExplorerBufNbr Normal
+        hi def link bufExplorerMapping Identifier
+        hi def link bufExplorerHelp Normal
         hi def link bufExplorerOpenIn Identifier
-        hi def link bufExplorerSortBy String
-        hi def link bufExplorerSplit NonText
-        hi def link bufExplorerTitle NonText
+        hi def link bufExplorerSortBy Normal
+        hi def link bufExplorerSplit Normal
+        hi def link bufExplorerTitle Identifier
         hi def link bufExplorerSortType bufExplorerSortBy
         hi def link bufExplorerToggleSplit bufExplorerSplit
         hi def link bufExplorerToggleOpen bufExplorerOpenIn
 
-        hi def link bufExplorerActBuf Identifier
-        hi def link bufExplorerAltBuf String
-        hi def link bufExplorerCurBuf Type
+        hi def link bufExplorerActBuf Normal
+        hi def link bufExplorerAltBuf Normal
+        hi def link bufExplorerCurBuf Identifier
         hi def link bufExplorerHidBuf Constant
         hi def link bufExplorerLockedBuf Special
         hi def link bufExplorerModBuf Exception
