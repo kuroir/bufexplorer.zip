@@ -444,6 +444,7 @@ function! s:MapKeys()
     nnoremap <script> <silent> <buffer> m             :call <SID>MRUListShow()<CR>
     nnoremap <script> <silent> <buffer> o             :call <SID>SelectBuffer()<CR>
     nnoremap <script> <silent> <buffer> p             :call <SID>ToggleSplitOutPathName()<CR>
+    nnoremap <script> <silent> <buffer> <Tab>         :call <SID>Close()<CR>
     nnoremap <script> <silent> <buffer> q             :call <SID>Close()<CR>
     nnoremap <script> <silent> <buffer> r             :call <SID>SortReverse()<CR>
     nnoremap <script> <silent> <buffer> R             :call <SID>ToggleShowRelativePath()<CR>
@@ -561,7 +562,7 @@ function! s:CreateHelp()
         call add(header, '" D : wipe buffer')
         call add(header, '" f : toggle find active buffer')
         call add(header, '" p : toggle spliting of file and path name')
-        call add(header, '" q : quit')
+        call add(header, '" <Tab> or q : quit')
         call add(header, '" r : reverse sort')
         call add(header, '" R : toggle showing relative or full paths')
         call add(header, '" s : cycle thru "sort by" fields '.string(s:sort_by).'')
